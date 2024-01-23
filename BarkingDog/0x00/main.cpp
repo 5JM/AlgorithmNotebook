@@ -16,6 +16,9 @@ int gcd(int a, int b){
 }
 
 int main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
     // 문제1
     // cout<<func1(16)<<endl;
     // cout<<func1(34567)<<endl;
@@ -37,9 +40,9 @@ int main(){
     // cout<< func3(756580036)<<endl;
 
     // 문제4
-    cout<< func4(5)<<endl;
-    cout<< func4(97615282)<<endl;
-    cout<< func4(1024)<<endl;
+    // cout<< func4(5)<<endl;
+    // cout<< func4(97615282)<<endl;
+    // cout<< func4(1024)<<endl;
 
     return 0;
 }
