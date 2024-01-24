@@ -24,16 +24,24 @@ int main(){
     // a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
     // 총 26 
 
-    while(!s.empty()){
-        char tmp =  s.back();
 
-        for(int i = 97; i < 97+len; ++i){
-            if(tmp == i){
-                arr[i - 97]++; 
-            }
-        }
+    // sol 1 : my
+    // while(!s.empty()){
+    //     char tmp =  s.back();
 
-        s.pop_back();
+    //     for(int i = 97; i < 97+len; ++i){
+    //         if(tmp == i){
+    //             arr[i - 97]++; 
+    //         }
+    //     }
+
+    //     s.pop_back();
+    // }
+
+    // sol 2: barkingDog
+    for(int i = 0; i < s.size(); ++i){
+        char tmp = s[i];
+        arr[tmp - 'a']++; 
     }
 
     printArr(arr, len);
