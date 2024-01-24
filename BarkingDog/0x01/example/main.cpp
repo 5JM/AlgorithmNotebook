@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -33,6 +34,9 @@ int main(){
     int arr[10] = {10, 50, 40, 30, 70, 20};
     int len = 6;
 
+    int arr2[21];
+    int len2 = 21;
+
     insert(3, 60, arr, len); // 10 50 40 60 30 70 20
 
     printArr(arr, len);
@@ -40,6 +44,11 @@ int main(){
     erase(4, arr, len); // 10 50 40 60 70 20
 
     printArr(arr, len);
+
+    // 배열을 특정 값으로 채울 때 -> algorithm.h
+    fill(arr2, arr2+21, 1);
+
+    printArr(arr2, len2);
 
     return 0;
 }
