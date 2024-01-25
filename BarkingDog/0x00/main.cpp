@@ -25,14 +25,17 @@ int main(){
     // cout<<func1(27639)<<endl;
 
     // 문제2
-    // int arr1[] = {1,52,48};
-    // int arr2[] = {50,42};
-    // int arr3[] = {4, 13, 63, 87};
+    int arr1[] = {1,52,48};
+    int arr2[] = {50,42};
+    int arr3[] = {4, 13, 63, 87};
 
     // cout<< func2(arr1, 3)<<endl;
     // cout<< func2(arr2, 2)<<endl;
     // cout<< func2(arr3, 4)<<endl;
 
+    cout<< func2New(arr1, 3)<<endl;
+    cout<< func2New(arr2, 2)<<endl;
+    cout<< func2New(arr3, 4)<<endl;
 
     // 문제3
     // cout<< func3(9)<<endl;
