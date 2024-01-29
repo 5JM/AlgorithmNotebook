@@ -4,6 +4,8 @@
         "iostream": "cpp",
         "algorithm": "cpp",
         "ostream": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "stack": "cpp",
+        "string": "cpp"
     }
 }
