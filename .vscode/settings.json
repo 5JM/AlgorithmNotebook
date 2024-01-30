@@ -7,6 +7,7 @@
         "list": "cpp",
         "stack": "cpp",
         "string": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "deque": "cpp"
     }
 }
