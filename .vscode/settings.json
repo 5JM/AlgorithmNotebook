@@ -8,6 +8,7 @@
         "stack": "cpp",
         "string": "cpp",
         "queue": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "iosfwd": "cpp"
     }
 }
