@@ -20,7 +20,7 @@ int main(){
     cin.tie(0);
 
     int cntPic = 0, sizePic = 0;
-    queue<pair<int, int> > Q;
+    
 
     cin >> m >> n;
 
@@ -36,17 +36,19 @@ int main(){
     
     for(int i = 0; i < m; ++i){
         for(int j = 0; j < n; ++j){
-            pair<int, int> initPos;
-            int curPicSize = 0;
+            
 
-            if(vis[i][j] == 0 && board[i][j] == 1){
-                initPos = make_pair(i, j);
-
-                Q.push(initPos);
+            if(board[i][j] == 1 && vis[i][j] == 0){
+                int curPicSize = 0;
+                queue<pair<int, int> > Q;
+                
+                vis[i][j] = 1;
+                Q.push(make_pair(i, j));
+                
+                cntPic++;
 
                 while(!Q.empty()){
                     pair<int, int> cur = Q.front();
-
                     Q.pop();
 
                     curPicSize++;
@@ -65,10 +67,7 @@ int main(){
                     }
                 }
 
-                if(curPicSize>1) curPicSize-- ;
-
                 if(sizePic < curPicSize) sizePic = curPicSize;
-                if(curPicSize > 0) cntPic++;
             }
         }
     }
