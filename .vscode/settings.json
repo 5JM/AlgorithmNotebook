@@ -9,6 +9,7 @@
         "string": "cpp",
         "queue": "cpp",
         "deque": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "tuple": "cpp"
     }
 }
