@@ -10,6 +10,7 @@
         "queue": "cpp",
         "deque": "cpp",
         "iosfwd": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "__locale": "cpp"
     }
 }
