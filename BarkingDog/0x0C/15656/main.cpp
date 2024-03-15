@@ -4,10 +4,9 @@
 using namespace std;
 
 int n, m;
-int arr[10];
-bool isUsed[10000];
+int arr[10], num[10];
 
-void func15656(int k, int inArr[]){
+void func15656(int k, int start){
     if(k == m){
         for(int i = 0; i < m; ++i)
             cout << arr[i] << ' ';
@@ -16,17 +15,10 @@ void func15656(int k, int inArr[]){
     }
 
     for(int i = 0; i < n; ++i){
-        int val = inArr[i];
+        arr[k] = num[i];
 
-        arr[k] = val;
-
-        for(int j = i; j >= 0; --j)
-            isUsed[inArr[j]] = true;
-
-        func15656(k + 1, inArr);
+        func15656(k + 1, i);
         
-        for(int j = i; j >= 0; --j)
-            isUsed[inArr[j]] = false;
     }
 }
 
@@ -36,14 +28,13 @@ int main(){
 
     cin >> n >> m;
 
-    int in[n];
-
     for(int i = 0; i < n; ++i)
-        cin >> in[i];
+        cin >> num[i];
 
-    sort(in, in + n);
+    sort(num, num + n);
 
-    func15656(0, in);
+    // k, start
+    func15656(0, 0);
 
     return 0;
 }
