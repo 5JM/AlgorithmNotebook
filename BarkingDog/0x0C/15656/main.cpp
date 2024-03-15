@@ -4,7 +4,8 @@
 using namespace std;
 
 int n, m;
-int arr[10], isUsed[10000];
+int arr[10];
+bool isUsed[10000];
 
 void func15656(int k, int inArr[]){
     if(k == m){
