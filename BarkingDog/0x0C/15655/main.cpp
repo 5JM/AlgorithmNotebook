@@ -30,6 +30,22 @@ void func15655(int k, int start){
     }
 }
 
+void func15655UsePermu(){
+    int flags[n];
+
+    fill(flags, flags + m, 0);
+    fill(flags + m, flags + n, 1);
+
+    do{
+        for(int i = 0; i < n; ++i){
+            if(!flags[i])
+                cout << num[i] << ' ';
+        }
+        cout<< '\n';
+
+    }while(next_permutation(flags, flags+n));
+}
+
 int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
@@ -41,7 +57,11 @@ int main(){
 
     sort(num, num + n);
 
-    func15655(0, 0);
+    // back tracking
+    // func15655(0, 0);
+
+    // next_permutation
+    func15655UsePermu();
 
     return 0;
 }
