@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos
 
+# test
+playground.py
+
 # 0x05강 스택 문제 보류
 2493/
 
