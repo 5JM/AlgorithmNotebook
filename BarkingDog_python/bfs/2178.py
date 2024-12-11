@@ -10,7 +10,7 @@ dy = [0, 1, 0, -1]
 def bfs():
     for i in range(N):
         for j in range(M):
-            if BOARD[i][j] == 0 or VIS[i][j]:
+            if BOARD[i][j] == 0:
                 continue
 
             Q = deque()
@@ -39,7 +39,6 @@ if __name__ == '__main__':
     N, M = tuple(map(int, sys.stdin.readline().strip().split()))
 
     BOARD = [[0 for j in range(M)] for i in range(N)]
-    VIS = BOARD.copy()
 
     for i in range(N):
         BOARD[i] = list(map(int , sys.stdin.readline().strip()))
